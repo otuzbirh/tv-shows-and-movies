@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: inter;
+  width: 80%;
+  margin: 0 auto;
+  background: rgb(251, 254, 255);
+  height: auto;
+}
+
+
+.scrollbarRoot {
+  display: flex;
+  max-height: unset !important;
+}
+
+.scrollbarView {
+  flex: 1 1;
+  max-height: unset !important;
+}
+.card-container {
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  height: auto;
+}
+
+.card-img {
+  width: 90%;
+  height: 90%;
+}
+
+.logo{
+  width: 20%;
+  height: 80%;
+}
+
+.article-img{
+  height: 40%;
+  width: 50%;
+}
+
+@media  (max-width: 800px) {
+  .top-news {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    height: auto;
+    
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1310px) {
+  .top-news {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    height: auto;
+    
+  }
+}
